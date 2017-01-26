@@ -1,32 +1,86 @@
 <!DOCTYPE html>
+
 <head>
   <title>Ted Moke</title>
   <meta charset='utf-8' />
   <!--Import Google Icon Font-->
-      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <!--build:css css/styles.min.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link href="../dist/css/style.css" rel="stylesheet">
+  <!-- endbuild -->
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
+  <div class="row nav-row">
+      <nav>
+          <div class="col s5">
+            <ul id="nav-mobile" class="right">
+              <li><a href="#github">Github</a></li>
+              <li><a href="#work">Work</a></li>
+            </ul>
+          </div>
+          <div class="col s2">
+            <a href="#" class="brand-logo center">Logo</a>
+          </div>
+          <div class="col s5 offset-s2">
+            <ul class="left">
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+          </div>
+          </ul>
+    </nav> </div> <!-- /.row -->
+  <section class="jumbotron valign-wrapper">
   <div class="container">
+    
+      <div class="row">
+        
+      </div>
+      <!-- /.row -->
+    
     <div class="row">
-      <div class="col m4 s12 deep-orange">
-        1
-      </div>
-      <div class="col m4 s12 light-blue">
-        2
-      </div>
-      <div class="col m4 s12 grey">
-        3
-      </div>
+      <h1 class="center valign">
+        Web.Photo.Video
+      </h1>
     </div>
-  </div>
+    </div> <!-- /.container -->
+    </section>
+    <!-- /.jumbotron -->
   
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <section class="work" id="work">
+<div class="container">
+    <div class="row">
+      <div class="col s12">
+        <h1 class="center">
+          Work
+        </h1>
+      </div>
+      <div class="col m4 s12">
+        <div class="col-content deep-orange">
+          1</div>
+      </div>
+      <!-- /.col -->
+      <div class="col m4 s12">
+        <div class='col-content light-blue'>
+          2
+        </div>
+      </div>
+      <!-- /.col -->
+      <div class="col m4 s12">
+        <div class="col-content grey">
+          3
+        </div>
+      </div>
+      <!-- /.col -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+  </section>
+
+  <script src="js/main.min.js"></script>
 </body>
