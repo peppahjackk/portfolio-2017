@@ -1,8 +1,10 @@
+$primary-color: #333;
+$secondary-color: red;
+$tertiary-color: blue;
 
 body {
-  background-color:#fff;
-  font-size: 16px;
-}
+  background-color: $tertiary-color;
+  font-size: 16px;}
 
 .col {
   text-align: center;
