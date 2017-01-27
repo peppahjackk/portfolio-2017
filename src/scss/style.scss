@@ -10,6 +10,10 @@ body {
   text-align: center;
 }
 
+.grid .col {
+  padding: .75rem;
+}
+
 nav {
   background-color: transparent;
   position: fixed;
@@ -23,8 +27,19 @@ nav {
   background-image: url('../images/bg.jpg');
   background-repeat: repeat;
   min-height: 480px;
+  display: flex;
+  align-items: center;
 }
 
-.work {
+.jumbo-blurb {
+  margin-top: 4.1rem;
+}
+
+.about {
   display: block;
+  background-color: #212121;
+}
+
+section {
+  padding-bottom: 2rem;
 }
