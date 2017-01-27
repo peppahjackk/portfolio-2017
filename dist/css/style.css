@@ -2,15 +2,15 @@ body {
   background-color: #fff;
   font-size: 16px; }
 
-.col {
-  text-align: center; }
-
-.grid .col {
-  padding: .75rem; }
-
 nav {
   background-color: transparent;
   position: fixed; }
+
+section {
+  padding-bottom: 2rem; }
+
+.col {
+  text-align: center; }
 
 .nav-row {
   margin-bottom: 0; }
@@ -22,12 +22,13 @@ nav {
   display: flex;
   align-items: center; }
 
-.jumbo-blurb {
+.jumbo-title {
   margin-top: 4.1rem; }
 
 .about {
   display: block;
   background-color: #212121; }
 
-section {
-  padding-bottom: 2rem; }
+.about .me-photo {
+  min-height: 200px;
+  background-color: #888; }
