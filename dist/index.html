@@ -200,7 +200,7 @@
           </h1>
         </div>
         <!-- /.col -->
-        <form class="col s12 card-panel z-depth-3">
+        <form class="col s12 card-panel z-depth-3" id="contact-form">
           <div class="row">
             <div class="input-field col m6 s12">
               <i class="material-icons prefix">account_circle</i>
@@ -222,11 +222,12 @@
             <!-- /.input-field -->
             <div class="input-field col s12">
               <i class="material-icons prefix">chat</i>
-              <textarea id="textarea1" class="materialize-textarea"></textarea>
-              <label for="textarea1">Note</label>
+              <textarea id="inquiry" class="materialize-textarea"></textarea>
+              <label for="inquiry">Note</label>
             </div>
             <!-- /.input-field -->
-            <a class="waves-effect waves-light btn">Submit</a>
+            <button type="submit" id="form-submit" class="waves-effect waves-light btn">Submit</button> </br>
+            <div id="msg-submit" class="hidden"></div>
           </div>
           <!-- /.row -->
         </form>
@@ -272,6 +273,7 @@
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/validator.min.js"></script>
   <script src="js/custom.js"></script>
  <!-- <script src="js/main.min.js"></script> -->
 </body>

@@ -20,6 +20,10 @@ section {
   text-align: center;
 }
 
+.hidden {
+  display: none;
+}
+
 .nav-row {
   margin-bottom: 0;
 }
@@ -53,4 +57,9 @@ section {
 
 .contact .row form {
   padding-top: .75rem;
+}
+
+.msg {
+  margin-top: 25px;
+  color: #fff;
 }
