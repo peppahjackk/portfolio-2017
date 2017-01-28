@@ -1,5 +1,10 @@
-  // Initialize collapse button
-  $(".button-collapse").sideNav();
+// Initialize collapse button
+$(".button-collapse").sideNav();
+
+// Adjust hash jump to account for fixed nav
+window.addEventListener("hashchange", function () {
+    window.scrollTo(window.scrollX, window.scrollY - 64);
+});
 
 // Contact Form
 $("#contact-form").validator().on("submit", function (event) {
