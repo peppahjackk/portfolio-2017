@@ -17,70 +17,269 @@
 
 <body>
   <div class="row nav-row">
-      <nav>
-          <div class="col s5">
-            <ul id="nav-mobile" class="right">
-              <li><a href="#github">Github</a></li>
-              <li><a href="#work">Work</a></li>
-            </ul>
-          </div>
-          <div class="col s2">
-            <a href="#" class="brand-logo center">Logo</a>
-          </div>
-          <div class="col s5 offset-s2">
-            <ul class="left">
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-          </div>
-          </ul>
-    </nav> </div> <!-- /.row -->
-  <section class="jumbotron valign-wrapper">
-  <div class="container">
-    
+    <nav>
+      
+      <ul id="slide-out" class="side-nav">
+      <li><a href="#!">First Sidebar Link</a></li>
+      <li><a href="#!">Second Sidebar Link</a></li>
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header">Dropdown<i class="material-icons">arrow_drop_down</i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="#!">First</a></li>
+                <li><a href="#!">Second</a></li>
+                <li><a href="#!">Third</a></li>
+                <li><a href="#!">Fourth</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+          <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+
+      <!--
+      <div class="col s5">
+        <ul id="nav-mobile" class="right">
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+        </ul>
+      </div>
+      <div class="col s2">
+        <a href="#" class="brand-logo center">Logo</a>
+      </div>
+      <div class="col s5 offset-s2">
+        <ul class="left">
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="http://github.com/peppahjackk">Github</a></li>
+      </div>
+      </ul> -->
+    </nav>
+  </div>
+  <!-- /.row -->
+  <section class="jumbotron">
+    <div class="container">
       <div class="row">
-        
+        <h1 class="center jumbo-title">Ted R. Moke</h1>
+        <h2 class="center jumbo-blurb">
+        Web | Photo | Video
+      </h2>
+      </div>
+      <!-- /. row -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.jumbotron -->
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="row grid">
+        <div class="col s12">
+          <h1 class="center">
+          About Me
+        </h1>
+        </div>
+        <!-- /.col -->
+        <div class="col m4 hide-on-small-only me-photo card-panel z-depth-3">
+          Image of me
+        </div>
+        <div class="col m8 s12">
+          <div class="row">
+            <div class="col s12">
+              <div class="col-content blue-grey card-panel z-depth-3">
+                I am a freelancer in the NYC Metropolitan area with a variety of skills in web design, development, photography, and videography. I also work part-time at MLB Advanced Media as a Supervisor in the Logging/Cutting department.</div>
+            </div>
+            <!-- /.col -->
+            <div class="col m4 s12">
+              <div class="col-content deep-orange card-panel z-depth-3">
+                Design</div>
+            </div>
+            <!-- /.col -->
+            <div class="col m8 s12">
+              <div class='col-content light-blue card-panel z-depth-3'>
+                <ul>
+                  <li>Wordpress</li>
+                  <li>Photoshop</li>
+                  <li>InDesign</li>
+                  <li>Wireframing</li>
+                </ul>
+              </div>
+            </div>
+            <!-- /.col -->
+            <div class="col m8 s12">
+              <div class='col-content light-blue card-panel z-depth-3'>
+                <ul>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>Modern Javascript (vanilla, jQuery, React)</li>
+                  <li>git</li>
+                  <li>Gulp</li>
+                  <li>Sass</li>
+                  <li>Front-end Frameworks</li>
+                </ul>
+              </div>
+            </div>
+            <!-- /.col -->
+            <div class="col m4 s12">
+              <div class="col-content deep-orange card-panel z-depth-3">
+                Develop</div>
+            </div>
+            <!-- /.col -->
+            <div class="col m8 s12 push-m4">
+              <div class='col-content light-blue card-panel z-depth-3'>
+                <ul>
+                  <li>Premiere</li>
+                  <li>Final Cut</li>
+                  <li>Avid</li>
+                  <li>After Effects</li>
+                  <li>RED Scarlet X</li>
+                  <li>Canon 5D Mk III and below</li>
+                </ul>
+              </div>
+            </div>
+            <!-- /.col -->
+            <div class="col m4 s12 pull-m8">
+              <div class="col-content deep-orange card-panel z-depth-3">
+                Photo&amp;Video</div>
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.col -->
       </div>
       <!-- /.row -->
-    
-    <div class="row">
-      <h1 class="center valign">
-        Web.Photo.Video
-      </h1>
     </div>
-    </div> <!-- /.container -->
-    </section>
-    <!-- /.jumbotron -->
-  
-  <section class="work" id="work">
-<div class="container">
-    <div class="row">
-      <div class="col s12">
-        <h1 class="center">
-          Work
-        </h1>
-      </div>
-      <div class="col m4 s12">
-        <div class="col-content deep-orange">
-          1</div>
-      </div>
-      <!-- /.col -->
-      <div class="col m4 s12">
-        <div class='col-content light-blue'>
-          2
-        </div>
-      </div>
-      <!-- /.col -->
-      <div class="col m4 s12">
-        <div class="col-content grey">
-          3
-        </div>
-      </div>
-      <!-- /.col -->
-    </div>
-    <!-- /.row -->
-  </div>
-  <!-- /.container -->
+    <!-- /.container -->
   </section>
 
-  <script src="js/main.min.js"></script>
+  <section class="work" id="work">
+    <div class="container">
+      <div class="row grid">
+        <div class="col s12">
+          <h1 class="center">
+            Work
+          </h1>
+        </div>
+        <div class="col s12">
+          <div class="col-content light-green darken-2 card-panel z-depth-3">
+            CJ Sawmill &amp; Lumber - A local small wood milling business was looking to build attract clients via the web. I assesed their services offered, and began to design a four page web site that would display the process and pricing along with a gallery (fueled by WordPress) where the owner can upload pictures of lumber for sale and customer projects. After the site launched in early 2016 the company saw greatly increased sales that summer.
+          </div>
+        </div>
+        <!-- /.col -->
+        <div class="col m4 s12">
+          <div class="col-content deep-orange card-panel z-depth-3">
+            Cuneo HS - Headshots take in the West Village (Manhattan) for an aspiring voice actor.
+          </div>
+        </div>
+        <!-- /.col -->
+        <div class="col m8 s12">
+          <div class="col-content purple darken-2 card-panel z-depth-3">
+            Logger Tools - At MLBAM the Gamenight Loggers for the NHL have an overwhelming amount of things to keep track of over a three hour broadcast. I designed and developed the Logger Tools to alleviate some of the mental stress put on a logger while using up a small amount of screen real estate as possible.
+          </div>
+        </div>
+        <!-- /.col -->
+        <div class="col m6 s12">
+          <div class="col-content red card-panel z-depth-3">
+            Spare Key - (Directory of Photography - RED Scarlet X) - A short film in which an overworked wife blows off steam to a friend who holds a dark secret.
+          </div>
+        </div>
+        <!-- /.col -->
+        <div class="col m6 s12">
+          <div class="col-content amber card-panel z-depth-3">
+            The Art of Illusion - (Producer, Cameraman, and Assistant Editor - Avid, Panasonic HPX 370, Tascam DR-40) - A documentary diving into the lives of two full time magicians thriving in today's tech age.
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <div class="divider">
+    
+  </div>
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h1 class="center">
+            Contact Me
+          </h1>
+        </div>
+        <!-- /.col -->
+        <form class="col s12 card-panel z-depth-3">
+          <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="name" type="text" class="validate">
+              <label for="name">Name</label>
+            </div>
+            <!-- /.input-field -->
+            <div class="input-field col s6">
+              <i class="material-icons prefix">phone</i>
+              <input id="phone" type="tel" class="validate">
+              <label for="phone">Phone</label>
+            </div>
+            <!-- /.input-field -->
+            <div class="input-field col s12">
+              <i class="material-icons prefix">email</i>
+              <input id="email" type="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+            <!-- /.input-field -->
+            <div class="input-field col s12">
+              <i class="material-icons prefix">chat</i>
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1">Note</label>
+            </div>
+            <!-- /.input-field -->
+          </div>
+          <!-- /.row -->
+        </form>
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.contact -->
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">
+            Ted R Moke
+          </h5>
+          <p>
+            Offering web, photo, and video services to the New York Metropolitan area.
+          </p>
+        </div>
+        <!-- /.col -->
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">
+            Links
+          </h5>
+          <ul>
+            <li><a class="grey-text" href="http://github.com/peppahjackk">Github</a></li>
+            <li><a class="grey-text" href="http://codepen.io/peppahjackk">CodePen</a></li>
+            <li><a class="grey-text" href="https://vimeo.com/tedmokecreations">Vimeo</a></li>
+            <li><a class="grey-text" href="https://www.twitter.com/mokealoka">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+    <div class="footer-copyright">
+      <div class="container center">
+        © 2017 Ted R Moke
+      </div>
+    </div>
+  </footer>
+<!--build:js js/main.min.js -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <!-- endbuild -->
 </body>

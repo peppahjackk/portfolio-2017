@@ -9,11 +9,13 @@ body {
 nav {
   background-color: transparent;
   position: fixed;
+  z-index: 998;
 }
 
 section {
   padding-bottom: 2rem;
 }
+
 .col {
   text-align: center;
 }
@@ -22,10 +24,15 @@ section {
   margin-bottom: 0;
 }
 
+.input-field {
+  text-align:left;
+}
+
 .jumbotron {
   background-image: url('../images/bg.jpg');
   background-repeat: repeat;
   min-height: 480px;
+  padding-top: 56px;
   display: flex;
   align-items: center;
 }
@@ -42,4 +49,8 @@ section {
 .about .me-photo {
   min-height: 200px;
   background-color: #888;
+}
+
+.contact .row form {
+  padding-top: .75rem;
 }
