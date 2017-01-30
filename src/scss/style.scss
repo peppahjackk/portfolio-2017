@@ -2,134 +2,204 @@ $primary-color: #14213d;
 $accent-color: #f48907;
 $port-grey: #e5e5e5;
 $copy-color: #131516;
-$font-stack: 'Nunito sans', sans-serif;
-
+$font-stack: 'Nunito sans',
+sans-serif;
 body {
-  background-color: white;
-  font-size: 16px;
-  font-family: $font-stack;
-  color: $copy-color;
-  font-weight: 400;
+    background-color: white;
+    font-size: 16px;
+    font-family: $font-stack;
+    color: $copy-color;
+    font-weight: 400;
 }
 
 nav {
-  background-color: transparent;
-  position: fixed;
-  z-index: 998;
+    background-color: rgba(20, 33, 61, .75);
+    position: fixed;
+    z-index: 998;
+}
+
+.brand-logo {
+    img {
+        height: 54px;
+        width: 54px;
+        margin-top: 5px;
+    }
 }
 
 footer.page-footer {
-  background-color: $primary-color;
-  color: white;
-  .footer-copyright {
-  background-color: rgba(200, 200, 200, 0.1);
-}
+    background-color: $primary-color;
+    color: white;
+    .footer-copyright {
+        background-color: rgba(200, 200, 200, 0.1);
+    }
 }
 
 footer li a {
-  color: $accent-color;
-  text-decoration: underline;
+    color: $accent-color;
+    text-decoration: underline;
 }
-
 
 section {
-  padding-bottom: 2rem;
+    padding-bottom: 2rem;
 }
 
-h1, h5 {
+h1,
+h5 {
     font-weight: 700;
-  }
+}
 
 .col {
-  text-align: center;
+    text-align: center;
 }
 
 .hidden {
-  display: none;
+    display: none;
 }
 
 .nav-row {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .side-nav {
-  a {
-  color: $primary-color;
-  }
-  .divider {
-    margin-top: 0;
-  }
-}
-
-.side-nav-brand {
-  background-color: $primary-color;
-  a {
-  color: white;
-  }
+    a {
+        color: $primary-color;
+    }
+    .divider {
+        margin-top: 0;
+    }
 }
 
 .input-field {
-  text-align:left;
+    text-align: left;
 }
 
 .primary-color {
-  background-color: $primary-color;
-  color: white;
+    background-color: $primary-color;
+    color: white;
 }
 
 .jumbotron {
-  background-image: url('../images/hero2.jpg');
-  background-size: cover;
-  background-position: center;
-  min-height: 445px;
-  padding-top: 56px;
-  display: flex;
-  align-items: center;
-  color: white;
+    background-image: url('../images/port-hero.jpg');
+    background-size: cover;
+    background-position: bottom center;
+    min-height: 464px;
+    padding-top: 56px;
+    display: flex;
+    align-items: center;
+    color: white;
 }
 
 .jumbo-title {
-  margin-top: 4.1rem;
+    margin-top: 4.1rem;
 }
 
 .about {
-  display: block;
-  background-color: #212121;
-  
-  h1 {
-    color: #fff;
+    display: block;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 15%, rgba(0, 0, 0, 0.65) 100%), url('../images/bg.jpg') repeat;
+    h1 {
+        color: #fff;
+    }
+    .me-photo {
+        position: relative;
+        max-width: 100%;
+        border-radius: 2px;
+        margin: 0.5rem 0px 1rem
+    }
+    img {
+        width: 100%;
+    }
+
+  .row {
+    margin-bottom: 0;
   }
-  .me-photo {
-  position: relative;
-  max-width: 100%;
-    border-radius: 2px;
-  margin: 0.5rem 0px 1rem}
+
+  &:after {
+    //background-image: url(images/bg.jpg);
+  }
+}
+
+
+.design {
+    img {
+        max-width: 119px;
+        margin-top: -1px;
+        margin-bottom: -10px;
+    }
+}
+
+.develop {
+    img {
+        max-width: 171px;
+        margin-top: 6px;
+    }
+}
+
+.photo-video {
+    img {
+        max-width: 169px;
+        margin-top: 5px;
+    }
 }
 
 .contact {
-  .row form {
-  padding-top: .75rem;
-}
-  .btn {
-    background-color: $accent-color;
-  }
+    .row form {
+        padding-top: .75rem;
+    }
+    .btn {
+        background-color: $accent-color;
+    }
 }
 
 .input-field .prefix.active {
-  color: $accent-color;
+    color: $accent-color;
 }
+
 .msg {
-  margin-top: 25px;
-  color: #fff;
+    margin-top: 25px;
+    color: #fff;
 }
 
 .card-panel ul {
-  margin: 0px;
+    margin: 0px;
 }
 
-input:focus:not([type]):not([readonly]), input[type="text"]:focus:not([readonly]), input[type="password"]:focus:not([readonly]), input[type="email"]:focus:not([readonly]), input[type="url"]:focus:not([readonly]), input[type="time"]:focus:not([readonly]), input[type="date"]:focus:not([readonly]), input[type="datetime"]:focus:not([readonly]), input[type="datetime-local"]:focus:not([readonly]), input[type="tel"]:focus:not([readonly]), input[type="number"]:focus:not([readonly]), input[type="search"]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
-  border-bottom-color: $accent-color;
-  box-shadow: $accent-color 0px 1px 0px 0px;
+input:focus:not([type]):not([readonly]),
+input[type="text"]:focus:not([readonly]),
+input[type="password"]:focus:not([readonly]),
+input[type="email"]:focus:not([readonly]),
+input[type="url"]:focus:not([readonly]),
+input[type="time"]:focus:not([readonly]),
+input[type="date"]:focus:not([readonly]),
+input[type="datetime"]:focus:not([readonly]),
+input[type="datetime-local"]:focus:not([readonly]),
+input[type="tel"]:focus:not([readonly]),
+input[type="number"]:focus:not([readonly]),
+input[type="search"]:focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom-color: $accent-color;
+    box-shadow: $accent-color 0px 1px 0px 0px;
 }
 
-input:not([type]):focus:not([readonly])+label, input:not([type=text]):focus:not([readonly])+label,input:not([type=password]):focus:not([readonly])+label, input:not([type=email]):focus:not([readonly])+label, input:not([type=url]):focus:not([readonly])+label, input:not([type=time]):focus:not([readonly])+label, input:not([type=date]):focus:not([readonly])+label, input:not([type=datetime]):focus:not([readonly])+label, input:not([type=datetime-local]):focus:not([readonly])+label, input:not([type=tel]):focus:not([readonly])+label, input:not([type=number]):focus:not([readonly])+label, input:not([type=search]):focus:not([readonly])+label, textarea.materialize-textarea:focus:not([redaonly])+label {color: $accent-color;}
+input:not([type]):focus:not([readonly])+label,
+input:not([type=text]):focus:not([readonly])+label,
+input:not([type=password]):focus:not([readonly])+label,
+input:not([type=email]):focus:not([readonly])+label,
+input:not([type=url]):focus:not([readonly])+label,
+input:not([type=time]):focus:not([readonly])+label,
+input:not([type=date]):focus:not([readonly])+label,
+input:not([type=datetime]):focus:not([readonly])+label,
+input:not([type=datetime-local]):focus:not([readonly])+label,
+input:not([type=tel]):focus:not([readonly])+label,
+input:not([type=number]):focus:not([readonly])+label,
+input:not([type=search]):focus:not([readonly])+label,
+textarea.materialize-textarea:focus:not([redaonly])+label {
+    color: $accent-color;
+}
+
+@media only screen and (max-width: 600px) {
+    .brand-logo img {
+        width: 48px;
+        height: 48px;
+        margin-top: 4px;
+    }
+}

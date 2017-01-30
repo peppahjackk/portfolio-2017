@@ -6,9 +6,14 @@ body {
   font-weight: 400; }
 
 nav {
-  background-color: transparent;
+  background-color: rgba(20, 33, 61, 0.75);
   position: fixed;
   z-index: 998; }
+
+.brand-logo img {
+  height: 54px;
+  width: 54px;
+  margin-top: 5px; }
 
 footer.page-footer {
   background-color: #14213d;
@@ -23,7 +28,8 @@ footer li a {
 section {
   padding-bottom: 2rem; }
 
-h1, h5 {
+h1,
+h5 {
   font-weight: 700; }
 
 .col {
@@ -41,11 +47,6 @@ h1, h5 {
 .side-nav .divider {
   margin-top: 0; }
 
-.side-nav-brand {
-  background-color: #14213d; }
-  .side-nav-brand a {
-    color: white; }
-
 .input-field {
   text-align: left; }
 
@@ -54,10 +55,10 @@ h1, h5 {
   color: white; }
 
 .jumbotron {
-  background-image: url("../images/hero2.jpg");
+  background-image: url("../images/port-hero4.jpg");
   background-size: cover;
-  background-position: center;
-  min-height: 445px;
+  background-position: bottom center;
+  min-height: 464px;
   padding-top: 56px;
   display: flex;
   align-items: center;
@@ -68,7 +69,7 @@ h1, h5 {
 
 .about {
   display: block;
-  background-color: #212121; }
+  background: linear-gradient(to bottom, black 0%, black 15%, rgba(0, 0, 0, 0.65) 100%), url("../images/bg.jpg") repeat; }
   .about h1 {
     color: #fff; }
   .about .me-photo {
@@ -76,6 +77,23 @@ h1, h5 {
     max-width: 100%;
     border-radius: 2px;
     margin: 0.5rem 0px 1rem; }
+  .about img {
+    width: 100%; }
+  .about .row {
+    margin-bottom: 0; }
+
+.design img {
+  max-width: 119px;
+  margin-top: -1px;
+  margin-bottom: -10px; }
+
+.develop img {
+  max-width: 171px;
+  margin-top: 6px; }
+
+.photo-video img {
+  max-width: 169px;
+  margin-top: 5px; }
 
 .contact .row form {
   padding-top: .75rem; }
@@ -93,9 +111,39 @@ h1, h5 {
 .card-panel ul {
   margin: 0px; }
 
-input:focus:not([type]):not([readonly]), input[type="text"]:focus:not([readonly]), input[type="password"]:focus:not([readonly]), input[type="email"]:focus:not([readonly]), input[type="url"]:focus:not([readonly]), input[type="time"]:focus:not([readonly]), input[type="date"]:focus:not([readonly]), input[type="datetime"]:focus:not([readonly]), input[type="datetime-local"]:focus:not([readonly]), input[type="tel"]:focus:not([readonly]), input[type="number"]:focus:not([readonly]), input[type="search"]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+input:focus:not([type]):not([readonly]),
+input[type="text"]:focus:not([readonly]),
+input[type="password"]:focus:not([readonly]),
+input[type="email"]:focus:not([readonly]),
+input[type="url"]:focus:not([readonly]),
+input[type="time"]:focus:not([readonly]),
+input[type="date"]:focus:not([readonly]),
+input[type="datetime"]:focus:not([readonly]),
+input[type="datetime-local"]:focus:not([readonly]),
+input[type="tel"]:focus:not([readonly]),
+input[type="number"]:focus:not([readonly]),
+input[type="search"]:focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
   border-bottom-color: #f48907;
   box-shadow: #f48907 0px 1px 0px 0px; }
 
-input:not([type]):focus:not([readonly]) + label, input:not([type=text]):focus:not([readonly]) + label, input:not([type=password]):focus:not([readonly]) + label, input:not([type=email]):focus:not([readonly]) + label, input:not([type=url]):focus:not([readonly]) + label, input:not([type=time]):focus:not([readonly]) + label, input:not([type=date]):focus:not([readonly]) + label, input:not([type=datetime]):focus:not([readonly]) + label, input:not([type=datetime-local]):focus:not([readonly]) + label, input:not([type=tel]):focus:not([readonly]) + label, input:not([type=number]):focus:not([readonly]) + label, input:not([type=search]):focus:not([readonly]) + label, textarea.materialize-textarea:focus:not([redaonly]) + label {
+input:not([type]):focus:not([readonly]) + label,
+input:not([type=text]):focus:not([readonly]) + label,
+input:not([type=password]):focus:not([readonly]) + label,
+input:not([type=email]):focus:not([readonly]) + label,
+input:not([type=url]):focus:not([readonly]) + label,
+input:not([type=time]):focus:not([readonly]) + label,
+input:not([type=date]):focus:not([readonly]) + label,
+input:not([type=datetime]):focus:not([readonly]) + label,
+input:not([type=datetime-local]):focus:not([readonly]) + label,
+input:not([type=tel]):focus:not([readonly]) + label,
+input:not([type=number]):focus:not([readonly]) + label,
+input:not([type=search]):focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([redaonly]) + label {
   color: #f48907; }
+
+@media only screen and (max-width: 600px) {
+  .brand-logo img {
+    width: 48px;
+    height: 48px;
+    margin-top: 4px; } }
