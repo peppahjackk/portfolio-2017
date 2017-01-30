@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="800px"
+	 height="800px" viewBox="0 0 800 800" enable-background="new 0 0 800 800" xml:space="preserve">
+<g id="Layer_1">
+	<g>
+		<path fill="#FFFFFF" d="M400,41c48.482,0,95.493,9.486,139.727,28.196c42.745,18.079,81.143,43.97,114.125,76.953
+			s58.873,71.38,76.953,114.125C749.514,304.507,759,351.518,759,400s-9.486,95.493-28.195,139.728
+			c-18.08,42.744-43.971,81.142-76.953,114.124s-71.38,58.873-114.124,76.953C495.493,749.514,448.482,759,400,759
+			s-95.493-9.486-139.727-28.195c-42.745-18.08-81.142-43.971-114.125-76.953s-58.874-71.38-76.953-114.125
+			C50.486,495.493,41,448.482,41,400s9.486-95.493,28.196-139.727c18.079-42.745,43.97-81.142,76.953-114.125
+			s71.38-58.874,114.125-76.953C304.507,50.486,351.518,41,400,41 M400,1C179.639,1,1,179.639,1,400c0,220.362,178.639,399,399,399
+			c220.362,0,399-178.638,399-399C799,179.639,620.362,1,400,1L400,1z"/>
+	</g>
+</g>
+<g id="Layer_4">
+	<rect x="64" y="207" fill="#FFFFFF" width="676" height="58"/>
+	<rect x="224" y="207" fill="#FFFFFF" width="73" height="546"/>
+</g>
+<g id="Layer_5">
+	<rect x="400" y="333" fill="#FFFFFF" width="62" height="441"/>
+	<polygon fill="#FFFFFF" points="661.924,691.941 651.787,699 603,699 603,333 668,333 668,682.847 	"/>
+	<polyline fill="#FFFFFF" points="476.577,333 534.704,462.288 592.549,333 622,333 604.391,416.968 555,534 510.558,534 
+		462.285,421.067 442,407 442,333 477,333 	"/>
+</g>
+<g id="Layer_2" display="none">
+	<text transform="matrix(1 0 0 1 137.8203 498.6396)" display="inline" font-family="'Tahoma-Bold'" font-size="400.5851">T</text>
+</g>
+<g id="Layer_3" display="none" opacity="0.71">
+	
+		<text transform="matrix(1 0 0 1 373.0957 595.5146)" display="inline" fill="#F7931E" font-family="'Tahoma-Bold'" font-size="361.6069">M</text>
+</g>
+</svg>
