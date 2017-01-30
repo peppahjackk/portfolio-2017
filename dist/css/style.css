@@ -1,14 +1,30 @@
 body {
-  background-color: #fff;
-  font-size: 16px; }
+  background-color: white;
+  font-size: 16px;
+  font-family: "Nunito sans", sans-serif;
+  color: #131516;
+  font-weight: 400; }
 
 nav {
   background-color: transparent;
   position: fixed;
   z-index: 998; }
 
+footer.page-footer {
+  background-color: #14213d;
+  color: white; }
+  footer.page-footer .footer-copyright {
+    background-color: rgba(200, 200, 200, 0.1); }
+
+footer li a {
+  color: #f48907;
+  text-decoration: underline; }
+
 section {
   padding-bottom: 2rem; }
+
+h1, h5 {
+  font-weight: 700; }
 
 .col {
   text-align: center; }
@@ -19,16 +35,33 @@ section {
 .nav-row {
   margin-bottom: 0; }
 
+.side-nav a {
+  color: #14213d; }
+
+.side-nav .divider {
+  margin-top: 0; }
+
+.side-nav-brand {
+  background-color: #14213d; }
+  .side-nav-brand a {
+    color: white; }
+
 .input-field {
   text-align: left; }
 
+.primary-color {
+  background-color: #14213d;
+  color: white; }
+
 .jumbotron {
-  background-image: url("../images/bg.jpg");
-  background-repeat: repeat;
-  min-height: 480px;
+  background-image: url("../images/hero2.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 445px;
   padding-top: 56px;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  color: white; }
 
 .jumbo-title {
   margin-top: 4.1rem; }
@@ -36,14 +69,33 @@ section {
 .about {
   display: block;
   background-color: #212121; }
-
-.about .me-photo {
-  min-height: 200px;
-  background-color: #888; }
+  .about h1 {
+    color: #fff; }
+  .about .me-photo {
+    position: relative;
+    max-width: 100%;
+    border-radius: 2px;
+    margin: 0.5rem 0px 1rem; }
 
 .contact .row form {
   padding-top: .75rem; }
 
+.contact .btn {
+  background-color: #f48907; }
+
+.input-field .prefix.active {
+  color: #f48907; }
+
 .msg {
   margin-top: 25px;
   color: #fff; }
+
+.card-panel ul {
+  margin: 0px; }
+
+input:focus:not([type]):not([readonly]), input[type="text"]:focus:not([readonly]), input[type="password"]:focus:not([readonly]), input[type="email"]:focus:not([readonly]), input[type="url"]:focus:not([readonly]), input[type="time"]:focus:not([readonly]), input[type="date"]:focus:not([readonly]), input[type="datetime"]:focus:not([readonly]), input[type="datetime-local"]:focus:not([readonly]), input[type="tel"]:focus:not([readonly]), input[type="number"]:focus:not([readonly]), input[type="search"]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom-color: #f48907;
+  box-shadow: #f48907 0px 1px 0px 0px; }
+
+input:not([type]):focus:not([readonly]) + label, input:not([type=text]):focus:not([readonly]) + label, input:not([type=password]):focus:not([readonly]) + label, input:not([type=email]):focus:not([readonly]) + label, input:not([type=url]):focus:not([readonly]) + label, input:not([type=time]):focus:not([readonly]) + label, input:not([type=date]):focus:not([readonly]) + label, input:not([type=datetime]):focus:not([readonly]) + label, input:not([type=datetime-local]):focus:not([readonly]) + label, input:not([type=tel]):focus:not([readonly]) + label, input:not([type=number]):focus:not([readonly]) + label, input:not([type=search]):focus:not([readonly]) + label, textarea.materialize-textarea:focus:not([redaonly]) + label {
+  color: #f48907; }
