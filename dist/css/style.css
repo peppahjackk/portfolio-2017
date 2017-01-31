@@ -16,14 +16,17 @@ nav {
   margin-top: 5px; }
 
 footer.page-footer {
-  background-color: #14213d;
+  margin-top: 0;
+  background: linear-gradient(to bottom, rgba(20, 33, 61, 0.75) 0%, #14213d 100%), url(../images/bg.jpg) repeat;
   color: white; }
   footer.page-footer .footer-copyright {
-    background-color: rgba(200, 200, 200, 0.1); }
-
-footer li a {
-  color: #f48907;
-  text-decoration: underline; }
+    background-color: rgba(0, 0, 0, 0.15); }
+  footer.page-footer li {
+    display: inline;
+    margin: 0 .5rem; }
+  footer.page-footer a {
+    color: #f48907;
+    text-decoration: underline; }
 
 section {
   padding-bottom: 2rem; }
@@ -46,6 +49,14 @@ h5 {
 
 .side-nav .divider {
   margin-top: 0; }
+
+.sidenav-custom-icon img {
+  height: 24px;
+  position: absolute;
+  margin-top: 12px; }
+
+.sidenav-custom-icon span {
+  margin-left: 56px; }
 
 .input-field {
   text-align: left; }
@@ -95,11 +106,17 @@ h5 {
   max-width: 169px;
   margin-top: 5px; }
 
-.contact .row form {
-  padding-top: .75rem; }
-
-.contact .btn {
-  background-color: #f48907; }
+.contact {
+  background-image: url(../images/hudson.jpg);
+  background-size: cover;
+  background-position: bottom center;
+  padding-bottom: 3.25rem; }
+  .contact .row form {
+    padding-top: .75rem; }
+  .contact .btn {
+    background-color: #f48907; }
+  .contact h1 {
+    color: #fff; }
 
 .input-field .prefix.active {
   color: #f48907; }
@@ -110,6 +127,12 @@ h5 {
 
 .card-panel ul {
   margin: 0px; }
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
+  color: #f48907;
+  font-weight: 700; }
+  .card .card-action a:not(.btn):not(.btn-large):not(.btn-floating):hover {
+    color: #d0770b; }
 
 input:focus:not([type]):not([readonly]),
 input[type="text"]:focus:not([readonly]),

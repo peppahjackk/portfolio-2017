@@ -1,5 +1,6 @@
 $primary-color: #14213d;
 $accent-color: #f48907;
+$accent-color-dk: #d0770b;
 $port-grey: #e5e5e5;
 $copy-color: #131516;
 $font-stack: 'Nunito sans',
@@ -27,16 +28,20 @@ nav {
 }
 
 footer.page-footer {
-    background-color: $primary-color;
+    margin-top: 0;
+    background: linear-gradient(to bottom, rgba(20, 33, 61, .75) 0%, rgba(20, 33, 61, 1) 100%), url(../images/bg.jpg) repeat;
     color: white;
     .footer-copyright {
-        background-color: rgba(200, 200, 200, 0.1);
+        background-color: rgba(0, 0, 0, 0.15);
     }
-}
-
-footer li a {
-    color: $accent-color;
-    text-decoration: underline;
+    li {
+        display: inline;
+        margin: 0 .5rem;
+    }
+    a {
+        color: $accent-color;
+        text-decoration: underline;
+    }
 }
 
 section {
@@ -66,6 +71,17 @@ h5 {
     }
     .divider {
         margin-top: 0;
+    }
+}
+
+.sidenav-custom-icon {
+    img {
+        height: 24px;
+        position: absolute;
+        margin-top: 12px;
+    }
+    span {
+        margin-left: 56px;
     }
 }
 
@@ -108,16 +124,13 @@ h5 {
     img {
         width: 100%;
     }
-
-  .row {
-    margin-bottom: 0;
-  }
-
-  &:after {
-    //background-image: url(images/bg.jpg);
-  }
+    .row {
+        margin-bottom: 0;
+    }
+    &:after {
+        //background-image: url(images/bg.jpg);
+    }
 }
-
 
 .design {
     img {
@@ -142,11 +155,18 @@ h5 {
 }
 
 .contact {
+    background-image: url(../images/hudson.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    padding-bottom: 3.25rem;
     .row form {
         padding-top: .75rem;
     }
     .btn {
         background-color: $accent-color;
+    }
+    h1 {
+        color: #fff;
     }
 }
 
@@ -161,6 +181,14 @@ h5 {
 
 .card-panel ul {
     margin: 0px;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
+  color: $accent-color;
+  font-weight: 700;
+  &:hover {
+    color: $accent-color-dk;
+  }
 }
 
 input:focus:not([type]):not([readonly]),
