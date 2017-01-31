@@ -71,7 +71,9 @@ h5 {
   background-position: bottom center;
   min-height: 464px;
   padding-top: 56px;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-align: center;
   align-items: center;
   color: white; }
 

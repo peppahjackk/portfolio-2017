@@ -4,10 +4,15 @@ var useref = require('gulp-useref');
 var uglify = require('gulp-uglify');
 var gulpIf = require('gulp-if');
 var imagemin = require('gulp-imagemin');
+var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sass', function() {
   return gulp.src('src/scss/**/*.scss')
     .pipe(sass())
+    .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
     .pipe(gulp.dest('dist/css'))
 });
 
