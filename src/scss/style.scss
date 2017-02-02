@@ -17,6 +17,9 @@ nav {
     background-color: rgba(20, 33, 61, .75);
     position: fixed;
     z-index: 998;
+  ul a:hover {
+    background-color: rgba(255,255,255,0.1);
+  }
 }
 
 .brand-logo {
@@ -48,7 +51,9 @@ section {
     padding-bottom: 2rem;
 }
 
-h1,
+h1 {
+  font-weight: 900;
+}
 h5 {
     font-weight: 700;
 }
@@ -112,8 +117,9 @@ h5 {
 .about {
     display: block;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 15%, rgba(0, 0, 0, 0.6) 100%), url('../images/bg.jpg') repeat;
-    h1 {
+    h2 {
         color: #fff;
+      margin-top: 1.25rem;
     }
     .me-photo {
         position: relative;
@@ -165,7 +171,7 @@ h5 {
     .btn {
         background-color: $accent-color;
     }
-    h1 {
+    h2 {
         color: #fff;
     }
 }
