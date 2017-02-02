@@ -90,6 +90,8 @@ h5 {
   .about h2 {
     color: #fff;
     margin-top: 1.25rem; }
+  .about h3 {
+    color: #fff; }
   .about .me-photo {
     position: relative;
     max-width: 100%;
