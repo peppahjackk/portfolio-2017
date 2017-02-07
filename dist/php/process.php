@@ -30,7 +30,7 @@ $phone = $_POST["phone"];
 $EmailTo = "theodore.moke@gmail.com";
 $Subject = "Contact Form Inquiry";
 //Your domain to avoid the host blocking what it thinks is spam
-$EmailFrom = "web-support@tedrmoke.com";
+$EmailFrom = "web-support@tedmoke.com";
 
 // Creates template for email body
 $Body = "";
