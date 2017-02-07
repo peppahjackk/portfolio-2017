@@ -243,3 +243,9 @@ textarea.materialize-textarea:focus:not([redaonly])+label {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0.6) 100%), url('../images/bg.jpg') repeat; 
   }
 }
+
+@media only screen and (min-width: 992px) {
+  .jumbotron {
+    min-height: 500px;
+  }
+}
