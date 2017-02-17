@@ -5,6 +5,7 @@ $port-grey: #e5e5e5;
 $copy-color: #131516;
 $font-stack: 'Nunito sans',
 sans-serif;
+
 body {
     background-color: white;
     font-size: 16px;
@@ -255,4 +256,7 @@ textarea.materialize-textarea:focus:not([redaonly])+label {
         margin: .5em 0 0;
     }
     }
+  .jumbotron {
+    min-height: 500px;
+  }
 }
