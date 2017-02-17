@@ -29,6 +29,8 @@ footer.page-footer {
   footer.page-footer a {
     color: #f48907;
     text-decoration: underline; }
+  footer.page-footer .footer-brand {
+    max-width: 100px; }
 
 section {
   padding-bottom: 2rem; }
@@ -83,6 +85,8 @@ h5 {
 
 .jumbo-title {
   margin-top: 4.1rem; }
+  .jumbo-title img {
+    max-width: 250px; }
 
 .about {
   display: block;
@@ -181,3 +185,7 @@ textarea.materialize-textarea:focus:not([redaonly]) + label {
     margin-top: 4px; }
   .about {
     background: linear-gradient(to bottom, black 0%, black 5%, rgba(0, 0, 0, 0.6) 100%), url("../images/bg.jpg") repeat; } }
+
+@media only screen and (min-width: 992px) {
+  footer p {
+    margin: .5em 0 0; } }
