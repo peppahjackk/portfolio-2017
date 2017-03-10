@@ -119,6 +119,16 @@ h5 {
   max-width: 169px;
   margin-top: 5px; }
 
+.chip-row {
+  margin-top: .5rem; }
+  .chip-row .chip {
+    margin-bottom: 0; }
+
+.cap-card p::first-letter {
+  font-size: 200%;
+  line-height: 50%;
+  margin-top: 2rem; }
+
 .contact {
   background-image: url(../images/hudson.jpg);
   background-size: cover;
@@ -187,8 +197,7 @@ textarea.materialize-textarea:focus:not([redaonly]) + label {
     background: linear-gradient(to bottom, black 0%, black 5%, rgba(0, 0, 0, 0.6) 100%), url("../images/bg.jpg") repeat; } }
 
 @media only screen and (min-width: 992px) {
-
   footer p {
-    margin: .5em 0 0; } 
+    margin: .5em 0 0; }
   .jumbotron {
     min-height: 500px; } }
