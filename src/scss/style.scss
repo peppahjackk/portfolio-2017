@@ -169,13 +169,11 @@ h5 {
     }
 }
 
-.chip-row {
-  margin-top: .5rem;
-  
   .chip {
+    margin-top: .5rem;
     margin-bottom: 0;
   }
-}
+
 
 .cap-card p::first-letter {
   font-size: 200%;
@@ -260,6 +258,14 @@ textarea.materialize-textarea:focus:not([redaonly])+label {
   .about {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0.6) 100%), url('../images/bg.jpg') repeat; 
   }
+}
+
+@media only screen and (min-width: 600px) {
+    .even-row {
+        display: flex;
+        clear: both;
+        align-items: center;
+    }
 }
 
 @media only screen and (min-width: 992px) {
