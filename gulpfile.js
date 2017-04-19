@@ -5,6 +5,7 @@ var uglify = require('gulp-uglify');
 var gulpIf = require('gulp-if');
 var imagemin = require('gulp-imagemin');
 var autoprefixer = require('gulp-autoprefixer');
+var newer = require('gulp-newer');
 
 gulp.task('sass', function() {
   return gulp.src('src/scss/**/*.scss')
@@ -24,7 +25,8 @@ gulp.task('useref', function() {
 })
 
 gulp.task('images', function() {
-	return gulp.src('src/images/to-min/*')
+	return gulp.src('src/images/*')
+    .pipe(newer('dist/images'))
 		.pipe(imagemin())
 		.pipe(gulp.dest('dist/images'))
 })
