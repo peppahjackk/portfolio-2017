@@ -13,13 +13,11 @@ $curl = curl_init();
 curl_setopt($curl, CURLOPT_URL, 'https://www.google.com/recaptcha/api/siteverify');
 curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-$result = curl_exec($curl);
+$result = json_decode(curl_exec($curl));
 curl_close($curl);
 
-if (!$result->success===true) {
-	$errorMSG .= "Please complete reCAPTCHA";
-	echo $result;
-	throw new exception('Gah! We seemed to have encountered an error. Please try again.');
+if (!$result->success) {
+	$errorMSG .= "Please complete reCAPTCHA ";
 } 
 
 	//Name Field
