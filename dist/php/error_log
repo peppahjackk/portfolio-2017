@@ -1,0 +1,31 @@
+[24-Apr-2017 12:37:43 America/New_York] PHP Parse error:  syntax error, unexpected ')' in /home/mokecdzb/public_html/tedmoke.com/test/portfolio/php/process.php on line 26
+[24-Apr-2017 12:38:00 America/New_York] PHP Parse error:  syntax error, unexpected ')' in /home/mokecdzb/public_html/tedmoke.com/test/portfolio/php/process.php on line 26
+[24-Apr-2017 12:38:41 America/New_York] PHP Fatal error:  Uncaught exception 'Exception' with message 'Gah! CAPTCHA verification failed. Please email me directly at: theodore dot moke at gmail dot com' in /home/mokecdzb/public_html/tedmoke.com/test/portfolio/php/process.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/mokecdzb/public_html/tedmoke.com/test/portfolio/php/process.php on line 25
+[24-Apr-2017 12:41:25 America/New_York] PHP Fatal error:  Uncaught exception 'Exception' with message 'Gah! CAPTCHA verification failed. Please email me directly at: theodore dot moke at gmail dot com' in /home/mokecdzb/public_html/tedmoke.com/test/portfolio/php/process.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/mokecdzb/public_html/tedmoke.com/test/portfolio/php/process.php on line 25
+[24-Apr-2017 12:52:18 America/New_York] PHP Parse error:  syntax error, unexpected ')' in /home/mokecdzb/public_html/tedmoke.com/test/portfolio/php/process.php on line 11
+[24-Apr-2017 12:53:15 America/New_York] PHP Fatal error:  Uncaught exception 'Exception' with message 'Gah! We seemed to have encountered an error. Please try again.' in /home/mokecdzb/public_html/tedmoke.com/test/portfolio/php/process.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/mokecdzb/public_html/tedmoke.com/test/portfolio/php/process.php on line 22
+[24-Apr-2017 12:54:01 America/New_York] PHP Fatal error:  Uncaught exception 'Exception' with message 'Gah! We seemed to have encountered an error. Please try again.' in /home/mokecdzb/public_html/tedmoke.com/test/portfolio/php/process.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/mokecdzb/public_html/tedmoke.com/test/portfolio/php/process.php on line 23
+[24-Apr-2017 12:56:14 America/New_York] PHP Fatal error:  Uncaught exception 'Exception' with message 'Gah! We seemed to have encountered an error. Please try again.' in /home/mokecdzb/public_html/tedmoke.com/test/portfolio/php/process.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/mokecdzb/public_html/tedmoke.com/test/portfolio/php/process.php on line 23
+[24-Apr-2017 12:58:10 America/New_York] PHP Fatal error:  Uncaught exception 'Exception' with message 'Gah! We seemed to have encountered an error. Please try again.' in /home/mokecdzb/public_html/tedmoke.com/test/portfolio/php/process.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/mokecdzb/public_html/tedmoke.com/test/portfolio/php/process.php on line 23
+[24-Apr-2017 13:20:24 America/New_York] PHP Fatal error:  Uncaught exception 'Exception' with message 'Gah! We seemed to have encountered an error. Please try again.' in /home/mokecdzb/public_html/tedmoke.com/test/portfolio/php/process.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/mokecdzb/public_html/tedmoke.com/test/portfolio/php/process.php on line 23

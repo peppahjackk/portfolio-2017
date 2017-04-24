@@ -23,11 +23,12 @@ function submitForm(){
 	var email = $("#email").val();
 	var inquiry = $("#inquiry").val();
 	var phone = $("#phone").val();
+	var g_recaptcha = $("#g-recaptcha-response").val();
 
 	$.ajax({
 		type: "POST",
 		url: "php/process.php",
-		data: "name=" + name + "&email=" + email + "&phone=" + phone + "&inquiry=" + inquiry,
+		data: "name=" + name + "&email=" + email + "&phone=" + phone + "&inquiry=" + inquiry + "&g_recaptcha=" + g_recaptcha,
 		success: function(text){
 			if (text == "success"){
 				formSuccess();

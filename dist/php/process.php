@@ -1,69 +1,90 @@
 <?php
 
 $errorMSG = "";
+$secret = '6Ld8Xx4UAAAAAGlEJ9Cy6GHf1LSleVi_DiG45WJZ';
 
-//Name Field
-if (empty($_POST["name"])) {
-	$errorMSG = "Name is required ";
-} else {
-	$name = $_POST["name"];
-}
+$data = array(
+       'secret' => $secret,
+       'response' => $_POST['g_recaptcha'],
+       'remoteip' => $_SERVER['REMOTE_ADDR']
+    );
 
-//Email Field
-if (empty($_POST["email"])) {
-	$errorMSG .= "Email is required ";
-} else {
-	$email = $_POST["email"];
-}
+$curl = curl_init();
+curl_setopt($curl, CURLOPT_URL, 'https://www.google.com/recaptcha/api/siteverify');
+curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+$result = curl_exec($curl);
+curl_close($curl);
 
-//Inquiry Field
-if (empty($_POST["inquiry"])) {
-	$errorMSG .= "Inquiry is required ";
-} else {
-	$inquiry = $_POST["inquiry"];
-}
+if (!$result->success===true) {
+	$errorMSG .= "Please complete reCAPTCHA";
+	echo $result;
+	throw new exception('Gah! We seemed to have encountered an error. Please try again.');
+} 
 
-//Phone, not required
-$phone = $_POST["phone"];
+	//Name Field
+	if (empty($_POST["name"])) {
+		$errorMSG .= "Name is required ";
+	} else {
+		$name = $_POST["name"];
+	}
+
+	//Email Field
+	if (empty($_POST["email"])) {
+		$errorMSG .= "Email is required ";
+	} else {
+		$email = $_POST["email"];
+	}
+
+	//Inquiry Field
+	if (empty($_POST["inquiry"])) {
+		$errorMSG .= "Inquiry is required ";
+	} else {
+		$inquiry = $_POST["inquiry"];
+	}
+
+	//Phone, not required
+	$phone = $_POST["phone"];
 
 
-$EmailTo = "theodore.moke@gmail.com";
-$Subject = "Contact Form Inquiry";
-//Your domain to avoid the host blocking what it thinks is spam
-$EmailFrom = "web-support@tedmoke.com";
+	$EmailTo = "theodore.moke@gmail.com";
+	$Subject = "Contact Form Inquiry";
+	//Your domain to avoid the host blocking what it thinks is spam
+	$EmailFrom = "web-support@tedmoke.com";
 
-// Creates template for email body
-$Body = "";
-$Body .= "Name: ";
-$Body .= $name;
-$Body .= "\n";
+	// Creates template for email body
+	$Body = "";
+	$Body .= "Name: ";
+	$Body .= $name;
+	$Body .= "\n";
 
-$Body .= "Email: ";
-$Body .= $email;
-$Body .= "\n";
+	$Body .= "Email: ";
+	$Body .= $email;
+	$Body .= "\n";
 
-/*$headers = 'MIME-Version: 1.0' . "\r\n";
-$headers .= 'Content-Transfer-Encoding: 8bit' . "\r\n";
-$headers .= 'Content-Type: text/plain; charset=UTF-8' . "\r\n"; */
+	/*$headers = 'MIME-Version: 1.0' . "\r\n";
+	$headers .= 'Content-Transfer-Encoding: 8bit' . "\r\n";
+	$headers .= 'Content-Type: text/plain; charset=UTF-8' . "\r\n"; */
 
-$Body .= "Phone: ";
-$Body .= $phone;
-$Body .= "\n";
+	$Body .= "Phone: ";
+	$Body .= $phone;
+	$Body .= "\n";
 
-$Body .= "Inquiry: ";
-$Body .= $inquiry;
-$Body .= "\n";
+	$Body .= "Inquiry: ";
+	$Body .= $inquiry;
+	$Body .= "\n";
 
-// Sends Email
-$success = mail($EmailTo, $Subject, $Body, "From:".$EmailFrom);
+	// Sends Email
+	if ($errorMSG == "") {$success = mail($EmailTo, $Subject, $Body, "From:".$EmailFrom);}
 
 // Confirms if the process was successful
-if ($success && $errorMSG == ""){echo "success";}
-else{ 
-	if($errorMSG == ""){
-		echo "Something went wrong";
-	} else {
-		echo $errorMSG;
+	if ($success && $errorMSG == ""){echo "success";}
+	else{ 
+		if($errorMSG == ""){
+			echo "Something went wrong";
+		} else {
+			echo $errorMSG;
+		}
 	}
-}
+
 ?>
