@@ -201,7 +201,8 @@ textarea.materialize-textarea:focus:not([redaonly]) + label {
     -ms-flex-align: center;
     align-items: center; }
   .contact form .g-recaptcha {
-    margin-left: 44px !important; } }
+    margin-left: 44px !important;
+    margin-bottom: 1rem; } }
 
 @media only screen and (min-width: 992px) {
   footer p {
