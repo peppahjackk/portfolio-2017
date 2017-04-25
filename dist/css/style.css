@@ -126,6 +126,9 @@ h2, h5 {
 .cap-card p::first-letter {
   font-size: 200%; }
 
+.card-action span {
+  margin-right: 20px; }
+
 .contact {
   background-image: url(../images/hudson.jpg);
   background-size: cover;
