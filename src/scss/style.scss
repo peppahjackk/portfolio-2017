@@ -266,6 +266,10 @@ textarea.materialize-textarea:focus:not([redaonly])+label {
         clear: both;
         align-items: center;
     }
+
+    .contact form .g-recaptcha {
+        margin-left: 44px !important;
+    }
 }
 
 @media only screen and (min-width: 992px) {

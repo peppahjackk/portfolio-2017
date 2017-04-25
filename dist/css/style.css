@@ -199,7 +199,9 @@ textarea.materialize-textarea:focus:not([redaonly]) + label {
     display: flex;
     clear: both;
     -ms-flex-align: center;
-    align-items: center; } }
+    align-items: center; }
+  .contact form .g-recaptcha {
+    margin-left: 44px !important; } }
 
 @media only screen and (min-width: 992px) {
   footer p {
