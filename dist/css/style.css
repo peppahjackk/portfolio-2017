@@ -38,7 +38,7 @@ section {
 h1 {
   font-weight: 900; }
 
-h5 {
+h2, h5 {
   font-weight: 700; }
 
 .col {
@@ -133,6 +133,8 @@ h5 {
   padding-bottom: 3.25rem; }
   .contact .row form {
     padding-top: .75rem; }
+    .contact .row form .g-recaptcha {
+      margin-bottom: 1rem; }
   .contact .btn {
     background-color: #f48907; }
   .contact h2 {
@@ -201,8 +203,7 @@ textarea.materialize-textarea:focus:not([redaonly]) + label {
     -ms-flex-align: center;
     align-items: center; }
   .contact form .g-recaptcha {
-    margin-left: 44px !important;
-    margin-bottom: 1rem; } }
+    margin-left: 44px !important; } }
 
 @media only screen and (min-width: 992px) {
   footer p {

@@ -58,7 +58,7 @@ section {
 h1 {
   font-weight: 900;
 }
-h5 {
+h2, h5 {
     font-weight: 700;
 }
 
@@ -186,6 +186,10 @@ h5 {
     padding-bottom: 3.25rem;
     .row form {
         padding-top: .75rem;
+
+        .g-recaptcha {
+            margin-bottom: 1rem;
+        }
     }
     .btn {
         background-color: $accent-color;
@@ -269,7 +273,6 @@ textarea.materialize-textarea:focus:not([redaonly])+label {
 
     .contact form .g-recaptcha {
         margin-left: 44px !important;
-        margin-bottom: 1rem;
     }
 }
 
