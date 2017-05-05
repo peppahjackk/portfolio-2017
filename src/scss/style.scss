@@ -147,6 +147,13 @@ h2, h5 {
     }
 }
 
+#sticky.stick {
+    margin-top: 0 !important;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+}
+
 .design {
     img {
         max-width: 119px;
