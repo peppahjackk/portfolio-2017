@@ -72,17 +72,22 @@ if (!$result->success) {
 	$Body .= $inquiry;
 	$Body .= "\n";
 
-	// Sends Email
-	if ($errorMSG == "") {$success = mail($EmailTo, $Subject, $Body, "From:".$EmailFrom);}
+$Headers = 'From: '.$EmailFrom."\r\n".
+     
+   'Reply-To: '.$email."\r\n" .
+     
+   'X-Mailer: PHP/' . phpversion();
+
+// Sends Email
+if ($errorMSG == "") {$success = mail($EmailTo, $Subject, $Body, $Headers);}
 
 // Confirms if the process was successful
-	if ($success && $errorMSG == ""){echo "success";}
-	else{ 
-		if($errorMSG == ""){
-			echo "Something went wrong";
-		} else {
-			echo $errorMSG;
-		}
+if ($success && $errorMSG == ""){echo "success";}
+else{ 
+	if($errorMSG == ""){
+		echo "Something went wrong";
+	} else {
+		echo $errorMSG;
 	}
-
+}
 ?>
