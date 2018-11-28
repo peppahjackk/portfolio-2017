@@ -52,6 +52,9 @@ function submitMSG(valid, msg){
 
 // Add smooth has scrolling
 $(document).ready(function(){
+	var now = new Date();
+	console.log(now.getFullYear());
+	$('#year').text(now.getFullYear());
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
 
